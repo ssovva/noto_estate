@@ -8,7 +8,7 @@
 </head>
 <body>
 
-<nav class="navbar">
+<nav>
     <a class="nav-item logo" href="#"><img src="images/logo.png" alt="Logo"/></a>
     <ul>
         <li class="nav-item dropdown">
@@ -39,7 +39,7 @@
                 </div>
             </div>
         </li>
-        <li class="nav-item" ><a href="#help">Help</a></li>
+        <li class="nav-item"><a href="#help">Help</a></li>
         <li class="nav-item"><a href="#about">About Us</a></li>
     </ul>
     <ul>
@@ -47,34 +47,48 @@
         <li class="nav-item"><a href="#"><i data-feather="heart"></i></a></li>
     </ul>
 </nav>
-<header>
-    <h1>BUSINESS CENTERS FOR RENT ACROSS EUROPE FIND YOUR OPTION</h1>
-    <p>More Than 900 Business Spaces In Top Locations</p>
-    <p>call us: (+12) 34 56 78 90</p>
-</header>
+
+
 <main>
-    <section id="find-your-option">
-        <h3>Find Your Option</h3>
+    <img class="banner" src="images/gray_office.png" alt="Banner"/>
+
+    <section id="about">
         <div>
-            <ul class="horizontal">
-                <li><label><input type="checkbox">office</label></li>
-                <li><label><input type="checkbox">business center</label></li>
-                <li><label><input type="checkbox">meeting room</label></li>
-                <li><label><input type="checkbox">coworking</label></li>
-                <li><label><input type="checkbox">parking</label></li>
-            </ul>
+            <h1>Business centers for rent across europe / Find your option</h1>
+            <h2>More Than 900 Business Spaces In Top Locations</h2>
         </div>
         <div>
-            <i data-feather="search"></i>
-            <input type="search" placeholder="enter a country, city, area" aria-label="Location search">
-            <button class="btn-primary">Search</button>
+            <p>call us: (+12) 34 56 78 90</p>
         </div>
     </section>
 
-    <section id="choose-your-country">
-        <h3>
-            Choose Your Country
-        </h3>
+    <section id="find-your-option">
+        <h3>Find your option</h3>
+        <form>
+            <div>
+                <ul class="rent-options-list">
+                    <li><label><input type="checkbox" name="rent-option" value="office">office</label></li>
+                    <li>
+                        <label><input type="checkbox" name="rent-option" value="business center">business center</label>
+                    </li>
+                    <li><label><input type="checkbox" name="rent-option" value="meeting room">meeting room</label></li>
+                    <li><label><input type="checkbox" name="rent-option" value="coworking">coworking</label></li>
+                    <li><label><input type="checkbox" name="rent-option" value="parking">parking</label></li>
+                </ul>
+            </div>
+            <div class="location-search">
+                <i data-feather="search"></i>
+                <input type="search" name="location" placeholder="enter a country, city, area"
+                       aria-label="Location search">
+                <button type="submit" class="btn-primary">Search</button>
+            </div>
+        </form>
+    </section>
+
+    <section id="choose-your-country-description">
+        <h2>
+            Choose your country
+        </h2>
         <p>Finding a workspace for rent has never been easier. By using navigation menu, you can set the requirements
             for commercial property and we will bring out the most suitable variants instantly.
         </p>
@@ -83,84 +97,121 @@
         <p>You can rent the most appropriate commercial option in required complactation, time and sutable duration for
             all business purposes.
         </p>
+    </section>
+
+    <section id="choose-your-country">
         <div>
-            <ul class="horizontal">
-                <li><label><input type="checkbox">office</label></li>
-                <li><label><input type="checkbox">business center</label></li>
-                <li><label><input type="checkbox">meeting room</label></li>
-                <li><label><input type="checkbox">coworking</label></li>
-                <li><label><input type="checkbox">parking</label></li>
+            <ul class="rent-options-list">
+                <li><label><input type="checkbox" name="rent-option" value="office">office</label></li>
+                <li>
+                    <label><input type="checkbox" name="rent-option" value="business center">business center</label>
+                </li>
+                <li><label><input type="checkbox" name="rent-option" value="meeting room">meeting room</label></li>
+                <li><label><input type="checkbox" name="rent-option" value="coworking">coworking</label></li>
+                <li><label><input type="checkbox" name="rent-option" value="parking">parking</label></li>
             </ul>
         </div>
         <div>
-            <ul class="horizontal">
-                <li>Ukraine</li>
-                <li>Austria</li>
-                <li>Belgium</li>
-                <li>Denmark</li>
-                <li>Finland</li>
-                <li>France</li>
-                <li>Italy</li>
-                <li>The Netherlands</li>
-                <li>Poland</li>
-                <li>Spain</li>
-                <li>Germany</li>
-                <li>United Kingdom</li>
+            <ul class="countries-list">
+                <li><a href="#">Ukraine<i data-feather="chevron-right"></i></a></li>
+                <li><a href="#">Austria<i data-feather="chevron-right"></i></a></li>
+                <li><a href="#">Belgium<i data-feather="chevron-right"></i></a></li>
+                <li><a href="#">Denmark<i data-feather="chevron-right"></i></a></li>
+                <li><a href="#">Finland<i data-feather="chevron-right"></i></a></li>
+                <li><a href="#">France<i data-feather="chevron-right"></i></a></li>
+                <li><a href="#">Italy<i data-feather="chevron-right"></i></a></li>
+                <li><a href="#">The Netherlands<i data-feather="chevron-right"></i></a></li>
+                <li><a href="#">Poland<i data-feather="chevron-right"></i></a></li>
+                <li><a href="#">Spain<i data-feather="chevron-right"></i></a></li>
+                <li><a href="#">Germany<i data-feather="chevron-right"></i></a></li>
+                <li><a href="#">United Kingdom<i data-feather="chevron-right"></i></a></li>
             </ul>
         </div>
     </section>
+
     <section id="popular-areas">
-        <ul class="horizontal">
-            <li>Berlin</li>
-            <li>Madrid</li>
-            <li>City of London</li>
-            <li>Brussels</li>
-            <li>Warsaw</li>
-            <li>Kyiv</li>
-            <li>Kharkiv</li>
-            <li>Odessa</li>
-            <li>Lviv</li>
+        <h2>Popular areas</h2>
+        <ul class="popular-cities">
+            <li><a href="#">Berlin</a></li>
+            <li><a href="#">Madrid</a></li>
+            <li><a href="#">City of London</a></li>
+            <li><a href="#">Brussels</a></li>
+            <li><a href="#">Warsaw</a></li>
+            <li><a href="#">Kyiv</a></li>
+            <li><a href="#">Kharkiv</a></li>
+            <li><a href="#">Odessa</a></li>
+            <li><a href="#">Lviv</a></li>
         </ul>
     </section>
+
     <section id="newest-business-centers">
-        <article>
-            <div class="date">7 Jan 2022</div>
-            <img src="images/strange_office.png" style="width: 100px; object-fit: cover" alt="Office">
-            <div class="type">office</div>
-            <div class="address">Parnassusweg 819, 1082 LZ Amsterdam, The Netherlands</div>
-            <div class="size">
-                <span>Area</span>
-                <span class="area-value">30 sq m</span>
-            </div>
-        </article>
-        <article>
-
-        </article>
-        <article>
-
-        </article>
+        <h2>Newest business centers</h2>
+        <div class="office-card-grid">
+            <article class="office-card">
+                <div class="date">7 Jan 2022</div>
+                <img src="images/strange_office.png" alt="Office">
+                <div class="office-info">
+                    <div class="type">office</div>
+                    <div class="address">Parnassusweg 819, 1082 LZ Amsterdam, The Netherlands</div>
+                    <div class="size">
+                        <span>Area</span>
+                        <span class="area-value">30 sq m</span>
+                    </div>
+                </div>
+            </article>
+            <article class="office-card">
+                <div class="date">10 Jan 2022</div>
+                <img src="images/white_office.png" alt="Office">
+                <div class="office-info">
+                    <div class="type">meeting room</div>
+                    <div class="address">Carrer Calàbria 149, entresol la, 08015 Barcelona, Spain</div>
+                    <div class="size">
+                        <span>Area</span>
+                        <span class="area-value">24 sq m</span>
+                    </div>
+                </div>
+            </article>
+            <article class="office-card">
+                <div class="date">10 Jan 2022</div>
+                <img src="images/motivational_office.png" alt="Office">
+                <div class="office-info">
+                    <div class="type">office</div>
+                    <div class="address">Unter den Linden 10, 10117 Berlin, Germany</div>
+                    <div class="size">
+                        <span>Area</span>
+                        <span class="area-value">48 sq m</span>
+                    </div>
+                </div>
+            </article>
+        </div>
     </section>
-    <section id="create">
-        <h3>
+
+    <section id="get-notifications">
+        <h2>
             Find The Most Suitable Commercial Property And Get Notifications About New Options On The Market
-        </h3>
+        </h2>
         <p>
             By creating this searching request, you will get emails the the latest offers that complay with your
             creteria. Noto Estate is always ready to provide you with the best solutions of commercial leases in a
             location you are interested in.
         </p>
-        <div>
-            <button class="btn-primary">Create</button>
+        <div class="notification-controls">
+            <button class="btn-primary">Subscribe</button>
         </div>
     </section>
-    <section id="our-memberships">
-        <ul>
-            <li></li>
-            <li></li>
-            <li></li>
+
+    <section id="our-partnerships">
+        <h2>Our partnerships</h2>
+        <ul class="partners-list">
+            <li><a href="#">Partner AAA</a></li>
+            <li><a href="#">Radio <i data-feather="radio"></i> Rocks</a></li>
+            <li><a href="#"><i data-feather="eye"></i> Big Brother</a></li>
+            <li><a href="#">Codepen <i data-feather="codepen"></i></a></li>
         </ul>
     </section>
 </main>
+
+
 <footer>
     Follow Novo Estate
 </footer>
