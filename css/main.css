@@ -100,7 +100,7 @@ a {
 /* Navbar styles  */
 
 .logo {
-    margin: 0.5rem 0;
+    padding: 0.5rem 1rem;
 }
 
 .logo img {
@@ -147,6 +147,10 @@ nav ul {
     position: relative;
 }
 
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
 .dropdown-content {
     display: none;
     position: absolute;
@@ -160,8 +164,8 @@ nav ul {
     z-index: 1;
 }
 
-.dropdown:hover .dropdown-content {
-    display: block;
+.dropdown-content a {
+    font-weight: normal;
 }
 
 .grid-2 {
@@ -193,6 +197,18 @@ nav ul {
     transition: 0.5s;
 }
 
+@media screen and (max-width: 425px) {
+    nav, nav ul {
+        flex-flow: column;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .dropdown:hover .dropdown-content {
+        display: none;
+    }
+}
+
 /* Main styles */
 
 main {
@@ -201,7 +217,7 @@ main {
 
 .banner {
     position: absolute;
-    height: 20rem;
+    height: 35rem;
     width: 100%;
     object-fit: cover;
     z-index: -1;
@@ -210,13 +226,18 @@ main {
 
 main section {
     margin: 0 auto 3rem auto;
-    width: 60%;
-    min-width: 50rem;
+    width: 75%;
     max-width: 90rem;
 }
 
 main section p {
     margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+    main section {
+        width: 90%;
+    }
 }
 
 #about {
@@ -228,8 +249,15 @@ main section p {
 
 #about h1, #about h2, #about p {
     display: inline-block;
+    padding: 0.5rem;
     background-color: rgba(64, 54, 43, 0.8);
     color: var(--color-white);
+}
+
+@media screen and (max-width: 768px) {
+    #about {
+        grid-template-columns: 1fr;
+    }
 }
 
 #find-your-option {
@@ -258,6 +286,7 @@ main section p {
 
 .location-search {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     gap: 1rem;
@@ -268,6 +297,7 @@ main section p {
 
 .location-search input[type=search] {
     flex-grow: 1;
+    max-width: 100%;
     padding: 0.5rem;
     border: none;
     font-size: 1.25rem;
@@ -333,7 +363,7 @@ main section p {
 
 .office-card-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
     gap: 2rem;
 }
 
@@ -374,6 +404,7 @@ main section p {
 
 .partners-list {
     display: flex;
+    flex-wrap: wrap;
     gap: 1rem;
 
     list-style: none;
@@ -381,9 +412,10 @@ main section p {
 
 .partners-list a {
     display: block;
-    width: 10rem;
+    max-width: 10rem;
     height: 5.5rem;
     line-height: 5.5rem;
+    padding: 0 0.5rem;
     text-align: center;
     background-color: var(--color-mid-blue);
     border: 1px solid var(--color-blue);
@@ -405,12 +437,17 @@ footer {
 .footer-grid {
     margin: 0 auto;
     width: 60%;
-    min-width: 50rem;
     max-width: 90rem;
 
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 .footer-grid section {
