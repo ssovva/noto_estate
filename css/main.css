@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+@import "footer.css";
+
 :root {
     --color-white: #FFFFFF;
     --color-orange: #D2770F;
@@ -430,36 +432,4 @@ main section p {
     transition: 0.5s;
 }
 
-footer {
-    margin-top: 4rem;
-    background-color: var(--color-white);
-}
 
-.footer-grid {
-    margin: 0 auto;
-    padding: 2rem 0;
-    width: 60%;
-    max-width: 90rem;
-
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
-}
-
-@media screen and (max-width: 768px) {
-    .footer-grid {
-        grid-template-columns: 1fr;
-    }
-}
-
-.footer-grid section {
-    margin: 2rem 0 1rem 0;
-}
-
-.company-location {
-    margin-bottom: 1rem;
-}
-
-.navbar-bottom ul {
-    list-style: none;
-}
