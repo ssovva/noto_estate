@@ -307,7 +307,7 @@ main section p {
     outline: none;
 }
 
-#choose-your-country {
+#choose-your-country-list {
     background-color: var(--color-extra-light-orange);
     border: 1px solid var(--color-orange);
 
@@ -382,8 +382,9 @@ main section p {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.address {
+.office-title {
     margin: 1rem;
+    font-size: 1.125rem;
 }
 
 .area {
@@ -436,6 +437,7 @@ footer {
 
 .footer-grid {
     margin: 0 auto;
+    padding: 2rem 0;
     width: 60%;
     max-width: 90rem;
 
